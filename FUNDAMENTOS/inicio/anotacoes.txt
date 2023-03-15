@@ -1,0 +1,5 @@
+Anotações 
+Nomes
+Para um entendimento dos codigos é bom definir bons nome, seja ele para pasta ou para variavéis.
+Estes bons nomes são os identificadores que vamos precisar definir 
+
