@@ -1,4 +1,3 @@
-console
-.log("Legal!!!");
-console.log("Boa Tarde");
-console.log("Boa Noite");
+console.log("Passo #01");
+console.log("Passo #02");
+console.log("Passo #03");
