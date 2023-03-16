@@ -2,4 +2,169 @@ Anotações do curso de fundamentos de JS
 Nomes
 Para um entendimento dos codigos é bom definir bons nome, seja ele para pasta ou para variavéis.
 Estes bons nomes são os identificadores que vamos precisar definir 
+<h1>Introdução</h1>
+Achamos que estamos criando o sistema para nossos próprios propósitos. Acreditamos que estamos fazendo isso à nossa própria imagem... Mas o computador não é exatamente como nós. É uma projeção de uma parte muito tênue de nós mesmos: aquela porção dedicada à lógica, ordem, regra e clareza.
 
+Ellen Ullman, Close to the Machine: Technophilia and its Discontents
+Este é um livro sobre como instruir computadores. Os computadores são tão comuns quanto as chaves de fenda hoje em dia, mas são um pouco mais complexos, e fazê-los fazer o que você quer que eles façam nem sempre é fácil.
+
+Se a tarefa que você tem para o seu computador for comum e bem compreendida, como mostrar seu e-mail ou agir como uma calculadora, você pode abrir o aplicativo apropriado e começar a trabalhar. Mas para tarefas exclusivas ou abertas, provavelmente não há aplicativo.
+
+É aí que entra a programação. A programação é o ato de construir um programa — um conjunto de instruções precisas que dizem ao computador o que fazer. Como os computadores são bestas burras e pedantes, a programação é fundamentalmente tediosa e frustrante.
+
+Felizmente, se você conseguir superar esse fato e talvez até gostar do rigor de pensar em termos com os quais as máquinas burras podem lidar, a programação pode ser recompensadora. Ele permite que você faça coisas em segundos que levariam uma eternidade à mão. É uma maneira de fazer com que sua ferramenta de computador faça coisas que não podia fazer antes. E fornece um exercício maravilhoso de pensamento abstrato.
+
+A maior parte da programação é feita com linguagens de programação. Uma linguagem de programação é uma linguagem construída artificialmente usada para instruir computadores. É interessante que a maneira mais eficaz que encontramos de nos comunicarmos com um computador se baseie tanto na maneira como nos comunicamos uns com os outros. Assim como as linguagens humanas, as linguagens de computador permitem que palavras e frases sejam combinadas de novas maneiras, possibilitando a expressão de conceitos sempre novos.
+
+A certa altura, as interfaces baseadas em linguagem, como os prompts BASIC e DOS das décadas de 1980 e 1990, eram o principal método de interação com computadores. Eles foram amplamente substituídos por interfaces visuais, que são mais fáceis de aprender, mas oferecem menos liberdade. As linguagens de computador ainda estão lá, se você souber onde procurar. Uma dessas linguagens, o JavaScript, está incorporada em todos os navegadores da Web modernos e, portanto, está disponível em quase todos os dispositivos.
+
+Este livro tentará torná-lo suficientemente familiarizado com esta linguagem para fazer coisas úteis e divertidas com ela.
+
+Na programação
+Além de explicar o JavaScript, apresentarei os princípios básicos da programação. Acontece que programar é difícil. As regras fundamentais são simples e claras, mas os programas construídos sobre essas regras tendem a se tornar complexos o suficiente para introduzir suas próprias regras e complexidade. Você está construindo seu próprio labirinto, de certa forma, e pode se perder nele.
+
+Haverá momentos em que a leitura deste livro parecerá terrivelmente frustrante. Se você é novo em programação, haverá muito material novo para digerir. Grande parte desse material será combinado de maneiras que exigirão que você faça conexões adicionais.
+
+Cabe a você fazer o esforço necessário. Quando estiver lutando para seguir o livro, não tire conclusões precipitadas sobre suas próprias capacidades. Você está bem - você só precisa continuar. Faça uma pausa, releia algum material e certifique-se de ler e entender os exemplos de programas e exercícios. Aprender é um trabalho árduo, mas tudo o que você aprende é seu e facilitará o aprendizado subsequente.
+
+Quando a ação se tornar não lucrativa, reúna informações; quando as informações se tornarem inúteis, durma.
+
+Ursula K. Le Guin, A Mão Esquerda das Trevas
+Um programa é muitas coisas. É um pedaço de texto digitado por um programador, é a força diretriz que faz o computador fazer o que faz, são dados na memória do computador, mas controla as ações executadas nessa mesma memória. Analogias que tentam comparar programas a objetos com os quais estamos familiarizados tendem a falhar. Um ajuste superficial é o de uma máquina - muitas partes separadas tendem a estar envolvidas e, para fazer a coisa toda funcionar, temos que considerar as maneiras pelas quais essas partes se interconectam e contribuem para a operação do todo.
+
+Um computador é uma máquina física que atua como um host para essas máquinas imateriais. Os próprios computadores só podem fazer coisas estupidamente diretas. A razão pela qual eles são tão úteis é que eles fazem essas coisas em uma velocidade incrivelmente alta. Um programa pode combinar engenhosamente um número enorme dessas ações simples para fazer coisas muito complicadas.
+
+Um programa é uma construção de pensamento. Não tem custo para construir, não tem peso e cresce facilmente sob nossas mãos digitando.
+
+Mas sem cuidado, o tamanho e a complexidade de um programa ficarão fora de controle, confundindo até mesmo a pessoa que o criou. Manter os programas sob controle é o principal problema da programação. Quando um programa funciona, é lindo. A arte da programação é a habilidade de controlar a complexidade. O grande programa é subjugado - simplificado em sua complexidade.
+
+Alguns programadores acreditam que essa complexidade é melhor gerenciada usando apenas um pequeno conjunto de técnicas bem compreendidas em seus programas. Eles criaram regras estritas (“melhores práticas”) prescrevendo a forma que os programas devem ter e mantendo-se cuidadosamente dentro de sua pequena zona segura.
+
+Isso não é apenas chato, é ineficaz. Novos problemas muitas vezes exigem novas soluções. O campo da programação é jovem e ainda está se desenvolvendo rapidamente, e é variado o suficiente para ter espaço para abordagens totalmente diferentes. Há muitos erros terríveis a serem cometidos no design do programa, e você deve ir em frente e cometê-los para que possa entendê-los. A noção de como é um bom programa é desenvolvida na prática, não aprendida a partir de uma lista de regras.
+
+Por que a linguagem é importante
+No início, no nascimento da computação, não havia linguagens de programação. Os programas eram mais ou menos assim:
+
+00110001 00000000 00000000
+00110001 00000001 00000001
+00110011 00000001 00000010
+01010001 00001011 00000010
+00100010 00000010 00001000
+01000011 00000001 00000000
+01000001 00000001 00000001
+00010000 00000010 00000000
+01100010 00000000 00000000
+Esse é um programa para somar os números de 1 a 10 e imprimir o resultado: . Poderia rodar em uma máquina simples e hipotética. Para programar os primeiros computadores, era necessário colocar grandes conjuntos de interruptores na posição correta ou fazer furos em tiras de papelão e alimentá-los ao computador. Você provavelmente pode imaginar como esse procedimento era tedioso e sujeito a erros. Mesmo escrever programas simples exigia muita inteligência e disciplina. Os complexos eram quase inconcebíveis.1 + 2 + ... + 10 = 55
+
+É claro que inserir manualmente esses padrões misteriosos de bits (os uns e os zeros) dava ao programador uma profunda sensação de ser um poderoso mago. E isso tem que valer alguma coisa em termos de satisfação no trabalho.
+
+Cada linha do programa anterior contém uma única instrução. Poderia ser escrito em inglês assim:
+
+Armazene o número 0 na posição 0 da memória.
+
+Armazene o número 1 na posição 1 da memória.
+
+Armazene o valor do local de memória 1 no local de memória 2.
+
+Subtraia o número 11 do valor na posição 2 da memória.
+
+Se o valor na posição 2 da memória for o número 0, continue com a instrução 9.
+
+Adicione o valor do local de memória 1 ao local de memória 0.
+
+Adicione o número 1 ao valor do local de memória 1.
+
+Continue com a instrução 3.
+
+Imprima o valor do local de memória 0.
+
+Embora isso já seja mais legível do que a sopa de bits, ainda é bastante obscuro. Usar nomes em vez de números para as instruções e locais de memória ajuda.
+
+Defina “total” para 0.
+ Defina “contagem” para 1.
+[laço]
+ Defina "comparar" para "contar".
+ Subtraia 11 de “comparar”.
+ Se “compare” for zero, continue em [end].
+ Adicione “contagem” a “total”.
+ Adicione 1 a "contar".
+ Continue em [loop].
+[fim]
+ Saída “total”.
+Você pode ver como o programa funciona neste momento? As duas primeiras linhas fornecem a dois locais de memória seus valores iniciais: totalserão usadas para construir o resultado da computação e countmanterão o controle do número que estamos vendo no momento. As linhas que usam comparesão provavelmente as mais estranhas. O programa quer ver se counté igual a 11 para decidir se pode parar de funcionar. Como nossa máquina hipotética é bastante primitiva, ela só pode testar se um número é zero e tomar uma decisão com base nisso. Portanto, ele usa o local de memória rotulado comparepara calcular o valor de count - 11e toma uma decisão com base nesse valor. As próximas duas linhas adicionam o valor de countao resultado e incrementam countem 1 toda vez que o programa decide quecountnão é 11 ainda.
+
+Aqui está o mesmo programa em JavaScript:
+
+deixe  total  =  0 , contagem  =  1 ;
+while ( contagem  <=  10 ) {
+   total  +=  conta ;
+  contagem  +=  1 ;
+}
+console . registro ( total );
+// → 55
+Esta versão nos dá mais algumas melhorias. Mais importante, não há mais necessidade de especificar a maneira como queremos que o programa salte para frente e para trás. A whileconstrução cuida disso. Ele continua executando o bloco (envolto em chaves) abaixo dele enquanto a condição dada for mantida. Essa condição é count <= 10, que significa “ a contagem é menor ou igual a 10”. Não precisamos mais criar um valor temporário e compará-lo com zero, que era apenas um detalhe desinteressante. Parte do poder das linguagens de programação é que elas podem cuidar de detalhes desinteressantes para nós.
+
+No final do programa, após a whileconclusão da construção, a console.logoperação é usada para escrever o resultado.
+
+Por fim, eis como seria o programa se tivéssemos as operações convenientes rangee sumdisponíveis, que respectivamente criam uma coleção de números dentro de um intervalo e calculam a soma de uma coleção de números:
+
+console . log ( soma ( intervalo ( 1,10 ) ))
+ ; // → 55
+A moral dessa história é que o mesmo programa pode ser expresso tanto em formas longas quanto curtas, ilegíveis e legíveis. A primeira versão do programa era extremamente obscura, enquanto esta última é quase inglesa: loga sumdos rangenúmeros de 1 a 10. (Veremos em capítulos posteriores como definir operações como sume range.)
+
+Uma boa linguagem de programação ajuda o programador, permitindo que ele fale sobre as ações que o computador deve executar em um nível superior. Ele ajuda a omitir detalhes, fornece blocos de construção convenientes (como whilee console.log), permite que você defina seus próprios blocos de construção (como sume range) e facilita a composição desses blocos.
+
+O que é JavaScript?
+O JavaScript foi introduzido em 1995 como uma forma de adicionar programas a páginas da Web no navegador Netscape Navigator. Desde então, a linguagem foi adotada por todos os outros principais navegadores gráficos. Ele tornou possíveis os aplicativos da Web modernos — aplicativos com os quais você pode interagir diretamente sem precisar recarregar a página para cada ação. O JavaScript também é usado em sites mais tradicionais para fornecer várias formas de interatividade e inteligência.
+
+É importante observar que o JavaScript não tem quase nada a ver com a linguagem de programação chamada Java. O nome semelhante foi inspirado por considerações de marketing, e não por bom senso. Quando o JavaScript estava sendo introduzido, a linguagem Java estava sendo fortemente comercializada e ganhando popularidade. Alguém achou que era uma boa ideia tentar acompanhar esse sucesso. Agora estamos presos com o nome.
+
+Após sua adoção fora do Netscape, um documento padrão foi escrito para descrever a maneira como a linguagem JavaScript deveria funcionar, de modo que os vários softwares que alegavam suportar JavaScript estivessem realmente falando sobre a mesma linguagem. Isso é chamado de padrão ECMAScript, em homenagem à organização Ecma International que fez a padronização. Na prática, os termos ECMAScript e JavaScript podem ser usados ​​de forma intercambiável – são dois nomes para a mesma linguagem.
+
+Há quem diga coisas terríveis sobre JavaScript. Muitas dessas coisas são verdadeiras. Quando fui obrigado a escrever algo em JavaScript pela primeira vez, rapidamente passei a desprezá-lo. Ele aceitaria quase tudo que eu digitasse, mas interpretaria de uma forma completamente diferente do que eu quis dizer. Isso tinha muito a ver com o fato de eu não ter a menor ideia do que estava fazendo, é claro, mas há um problema real aqui: o JavaScript é ridiculamente liberal no que permite. A ideia por trás desse design era tornar a programação em JavaScript mais fácil para iniciantes. Na verdade, isso torna mais difícil encontrar problemas em seus programas porque o sistema não os apontará para você.
+
+Essa flexibilidade também tem suas vantagens, no entanto. Ele deixa espaço para muitas técnicas que são impossíveis em linguagens mais rígidas e, como você verá (por exemplo, no Capítulo 10 ), pode ser usado para superar algumas deficiências do JavaScript. Depois de aprender a linguagem corretamente e trabalhar com ela por um tempo, aprendi a realmente gostar de JavaScript.
+
+Existem várias versões de JavaScript. ECMAScript versão 3 foi a versão amplamente suportada na época da ascensão do JavaScript ao domínio, aproximadamente entre 2000 e 2010. Durante esse tempo, o trabalho estava em andamento em uma ambiciosa versão 4, que planejava uma série de melhorias radicais e extensões para a linguagem. Mudar uma linguagem viva e amplamente usada de maneira tão radical acabou sendo politicamente difícil, e o trabalho na versão 4 foi abandonado em 2008, levando a uma versão 5 muito menos ambiciosa, que fez apenas algumas melhorias incontroversas, lançada em 2009. Então, em 2015, saiu a versão 6, uma grande atualização que incluiu algumas das ideias planejadas para a versão 4. Desde então, tivemos novas e pequenas atualizações todos os anos.
+
+O fato de a linguagem estar evoluindo significa que os navegadores precisam acompanhar constantemente e, se você estiver usando um navegador mais antigo, ele pode não oferecer suporte a todos os recursos. Os designers de linguagem têm o cuidado de não fazer nenhuma alteração que possa interromper os programas existentes, portanto, novos navegadores ainda podem executar programas antigos. Neste livro, estou usando a versão 2017 do JavaScript.
+
+Os navegadores da Web não são as únicas plataformas nas quais o JavaScript é usado. Alguns bancos de dados, como MongoDB e CouchDB, usam JavaScript como script e linguagem de consulta. Várias plataformas para programação de desktop e servidor, principalmente o projeto Node.js (o assunto do Capítulo 20 ), fornecem um ambiente para programar JavaScript fora do navegador.
+
+Código e o que fazer com ele
+Código é o texto que compõe os programas. A maioria dos capítulos deste livro contém bastante código. Acredito que ler código e escrever código são partes indispensáveis ​​para aprender a programar. Tente não apenas dar uma olhada nos exemplos - leia-os com atenção e compreenda-os. Isso pode ser lento e confuso no começo, mas eu prometo que você logo pegará o jeito. O mesmo vale para os exercícios. Não assuma que você os entende até que você realmente tenha escrito uma solução funcional.
+
+Eu recomendo que você tente suas soluções para exercícios em um interpretador JavaScript real. Dessa forma, você receberá um feedback imediato sobre se o que está fazendo está funcionando e, espero, ficará tentado a experimentar e ir além dos exercícios.
+
+Ao ler este livro em seu navegador, você pode editar (e executar) todos os programas de exemplo clicando neles.
+
+Se você quiser executar os programas definidos neste livro fora do site do livro, alguns cuidados serão necessários. Muitos exemplos são independentes e devem funcionar em qualquer ambiente JavaScript. Mas o código nos capítulos posteriores geralmente é escrito para um ambiente específico (o navegador ou Node.js) e pode ser executado somente lá. Além disso, muitos capítulos definem programas maiores, e os trechos de código que aparecem neles dependem uns dos outros ou de arquivos externos. A caixa de areia no site fornece links para arquivos Zip contendo todos os scripts e arquivos de dados necessários para executar o código de um determinado capítulo.
+
+Visão geral deste livro
+Este livro contém aproximadamente três partes. Os primeiros 12 capítulos discutem a linguagem JavaScript. Os próximos sete capítulos são sobre navegadores da Web e a maneira como o JavaScript é usado para programá-los. Finalmente, dois capítulos são dedicados ao Node.js, outro ambiente para programar JavaScript.
+
+Ao longo do livro, há cinco capítulos de projeto , que descrevem programas de exemplo maiores para lhe dar uma amostra da programação real. Em ordem de aparição, trabalharemos através da construção de um robô entregador , uma linguagem de programação , um jogo de plataforma , um programa de pixel paint e um site dinâmico .
+
+A parte de linguagem do livro começa com quatro capítulos que apresentam a estrutura básica da linguagem JavaScript. Eles introduzem estruturas de controle (como a whilepalavra que você viu nesta introdução), funções (escrevendo seus próprios blocos de construção) e estruturas de dados . Depois disso, você será capaz de escrever programas básicos. Em seguida, os Capítulos 5 e 6 apresentam técnicas para usar funções e objetos para escrever um código mais abstrato e manter a complexidade sob controle.
+
+Depois de um primeiro capítulo de projeto , a parte de linguagem do livro continua com capítulos sobre tratamento de erros e correção de bugs , expressões regulares (uma ferramenta importante para trabalhar com texto), modularidade (outra defesa contra a complexidade) e programação assíncrona (lidando com eventos que leva tempo). O segundo capítulo do projeto conclui a primeira parte do livro.
+
+A segunda parte, Capítulos 13 a 19 , descreve as ferramentas às quais o JavaScript do navegador tem acesso. Você aprenderá a exibir coisas na tela (Capítulos 14 e 17 ), responder à entrada do usuário ( Capítulo 15 ) e se comunicar pela rede ( Capítulo 18 ). Há novamente dois capítulos de projeto nesta parte.
+
+Depois disso, o Capítulo 20 descreve o Node.js e o Capítulo 21 constrói um pequeno site usando essa ferramenta.
+
+convenções tipográficas
+Neste livro, o texto escrito em uma monospacedfonte representará elementos de programas — às vezes são fragmentos autossuficientes e, às vezes, apenas se referem a parte de um programa próximo. Os programas (dos quais você já viu alguns) são escritos da seguinte forma:
+
+função  fatorial ( n ) {
+   if ( n  ==  0 ) {
+     return  1 ;
+  } else {
+     return  fatorial ( n  -  1 ) *  n ;
+  }
+}
+Às vezes, para mostrar a saída que um programa produz, a saída esperada é escrita depois dela, com duas barras e uma seta na frente.
+
+console . log ( fatorial ( 8 ));
+// → 40320
+Boa sorte!
