@@ -5,3 +5,7 @@ var desconto = 0.4;
 var precoComDesconto = preco * (1 - desconto);
 console.log (precoComDesconto);
 console.log("Preço com desconteo é : " + precoComDesconto)
+
+var nome = "caderno";
+var categoria = "Papelaria";
+console.log("Produtos:" + nome + ",Categoria" + categoria + ", Preço:" + preco + ", Desconto: " + desconto);
