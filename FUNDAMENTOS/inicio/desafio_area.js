@@ -14,3 +14,4 @@ var idade2 = 15;
 
 var resultado = idade + idade2;
 console.log(" O valor da idade somadas são : " + resultado);
+console.log(Math.PI);
